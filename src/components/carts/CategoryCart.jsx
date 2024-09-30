@@ -3,12 +3,12 @@ import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import './categoryCart.css';
 
-const CategoryCart = () => {
+const CategoryCart = ({ title, image }) => {
   return (
     <Box component='section'
       className="category-cart"
       style={{
-        backgroundImage: `url('/assets/banner-1.png')`,
+        backgroundImage: `url('/assets/${image}')`,
       }}
     >
       <Box
@@ -21,14 +21,7 @@ const CategoryCart = () => {
             marginTop: '64px',
           }}
         >
-          <Typography variant="h6" sx={{
-            fontSize: "30px",
-            lineHeight: '40px',
-            fontWeight: '100'
-          }}>
-            Everyday Fresh & <br />
-            Clean with Our Products
-          </Typography>
+          {title}
           <Button variant="contained" sx={{ mt: 3, backgroundColor: 'rgb(67, 160, 71)' }} color="primary">
             Shop Now <ArrowRightAltIcon />
           </Button>

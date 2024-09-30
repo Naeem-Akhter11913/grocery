@@ -12,6 +12,7 @@
     overflow-y: hidden; /* Hide vertical overflow */
     white-space: nowrap; /* Prevent wrapping of items */
     padding: 10px; /* Optional: Add some padding */
+    gap: 10px;
 }
 
 .card-container::-webkit-scrollbar {

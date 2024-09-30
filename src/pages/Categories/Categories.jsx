@@ -3,6 +3,7 @@ import './categories.css'
 import TinyCategories from '../../components/carts/TinyCategories';
 import EastIcon from '@mui/icons-material/East';
 import WestIcon from '@mui/icons-material/West';
+import CategoryCart from '../../components/carts/CategoryCart';
 
 const data = [
     { name: 'Custard Apple', items: 34, image: 'cat-1.png' },
@@ -20,11 +21,34 @@ const data = [
     { name: 'Strawberry', items: 36, image: 'cat-1.png' },
 ];
 
-// const bigCart = [
-//     {
-//         text: 
-//     }
-// ]
+const bigCart = [
+    {
+        text: <h6 style={{
+            fontSize: "30px",
+            lineHeight: '40px',
+            fontWeight: '100'
+          }}>Everyday Fresh & <br />
+            Clean with Our
+            Products</h6>,
+        image: 'banner-1.png'
+    }, {
+        text: <h6 style={{
+            fontSize: "30px",
+            lineHeight: '40px',
+            fontWeight: '100'
+          }}>Make your Breakfast <br />
+            Healthy and Easy</h6>,
+        image: 'banner-2.png'
+    }, {
+        text: <h6 style={{
+            fontSize: "30px",
+            lineHeight: '40px',
+            fontWeight: '100'
+          }}>The best Organic<br />
+            Products Online</h6>,
+        image: 'banner-3.png'
+    }
+]
 
 const Categories = () => {
     return (
@@ -47,8 +71,10 @@ const Categories = () => {
                     <TinyCategories key={index} name={item.name} items={item.items} image={item.image} />
                 ))}
             </div>
-            <div>
-
+            <div className='card-container'>
+                {bigCart.map(item => (
+                    <CategoryCart title={item.text} image={item.image} />
+                ))}
             </div>
         </div>
     )
