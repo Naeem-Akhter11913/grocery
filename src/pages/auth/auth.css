@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://t3.ftcdn.net/jpg/03/55/60/70/240_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg');
+}
+
+.content-left-container{
+    height: 100%;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.forget-password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.security-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #BCE3C9;
+    border-radius: 3px;
+}
+.css-480o17-MuiGrid-root>.MuiGrid-item{
+    padding-left: 0 !important;
+}
+
+.security-number span{
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+.security-number span:nth-child(1){
+    color: #55BB90;
+} 
+.security-number span:nth-child(2){
+    color: #F74B81;
+}
+.security-number span:nth-child(3){
+    color: #67BCEE;
+}
+.security-number span:nth-child(4){
+    color: #F59758;
+}
+
+
+.login-container .login-sub-container {
+    width: 60%;
+}
+
+.login-container .login-sub-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form {
+    display: flex !important;
+    align-items: center;
+}
+
+.content-right-container .form-info {
+    margin-bottom: 40px;
+}
+
+.content-right-container .form-container .form-controller {
+    margin-bottom: 15px;
+}
+
+.fa-facebook{
+    font-size: large !important;
+    color: #316FF6 !important;
+    margin-right: 10px !important;
+}
+
+.my-facebook-button-class{
+    padding: 10px 0px !important;
+    font-size: 16px !important;
+    background-color: transparent !important;
+    border: 1px solid #ccc !important;
+    cursor: pointer !important;
+    border-radius: 4px;
+    width: 200px;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center !important;
+    letter-spacing: 0.25px;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    color: #323232 !important;
+    font-weight: 400;
+    width: 260px !important;
+}
+.my-facebook-button-class:hover{
+    background-color: #F8FAFF !important;
+}
+
+.nsm7Bb-HzV7m-LgbsSe{
+    width: 260px !important;
+}
+.nsm7Bb-HzV7m-LgbsSe{
+    font-size: 16px !important;
+}
+
+.css-a5rdam-MuiGrid-root>.MuiGrid-item{
+    padding-top: 0!important;
+}
+
+#btn-color{
+    background-color: #3BB77E !important;
+}
+
+.anchor-color{
+    color: #3BB77E !important;
+}
+
+.register-with-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-block{
+    border: 1px solid rgb(208, 208, 208);
+    padding: 70px 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .login-sub-container {
+      padding: 16px;
+    }
+  
+    .form-controller {
+      margin-bottom: 10px;
+    }
+  
+    .security-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  

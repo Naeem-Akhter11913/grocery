@@ -1,0 +1,80 @@
+.hero-slider {
+    height: 70vh;
+    padding: 10px;
+}
+
+.bg-image {
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url('./bg-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    width: 100%;
+    height: 68vh;
+}
+
+/* Optional: To make it adapt on smaller screens */
+@media (max-width: 600px) {
+    .bg-image {
+        height: 30vh; /* Adjust height for smaller screens */
+    }
+}
+
+.slider-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 0.9;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    object-fit: contain; /* or 'cover' based on your preference */
+}
+
+.awssld__bullets {
+    bottom: 30px !important;
+    z-index: 9999 !important;
+}
+
+.awssld__controls__arrow-right,
+.awssld__controls__arrow-left {
+    height: 20px;
+    font-weight: 100 !important;
+}
+
+.awssld__controls__arrow-right {
+    margin-left: 50% !important;
+}
+
+.awssld__controls__arrow-left {
+    margin-right: 50% !important;
+}
+
+.awssld__bullets .awssld__bullets--active {
+    transform: scale(1.3) !important;
+}
+
+.awssld__bullets button {
+    width: 11px !important;
+    height: 11px !important;
+}

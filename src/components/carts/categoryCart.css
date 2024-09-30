@@ -1,0 +1,13 @@
+.category-cart {
+    height: 300px;
+    width: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  

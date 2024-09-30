@@ -1,0 +1,17 @@
+.nav-tab{
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.untitle-list li{
+    padding: 10px 5px;
+}
+
+
+.active{
+    background-color: #3BB77E;
+    color: white;
+}
+.active span svg{
+    color: #cbf5e1;
+}
