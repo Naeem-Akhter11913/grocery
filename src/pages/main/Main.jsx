@@ -5,6 +5,8 @@ import HeroSetion from '../hero'
 import Slider from '../../components/slider/Slider'
 import image_1 from '../hero/hero-1.png'
 import Categories from '../Categories/Categories'
+import { Box } from '@mui/material'
+import PropularPro from '../popularProduts/PropularPro'
 
 const Main = () => {
     const title = <h1>Don't miss amazing <br /> grocery deals</h1>;
@@ -17,16 +19,18 @@ const Main = () => {
             <HeroSetion />
 
             <Categories />
-            
 
-            <div style={{ height: '400px' }}>
+            <PropularPro />
+       
+            <Box component='div' style={{ height: '400px' }}>
                 <Slider
                     title={title}
                     subtitle={subtitle}
                     image={image_1}
                     setCurrentIndex={() => { }}
                 />
-            </div>
+            </Box>
+
 
 
         </div>

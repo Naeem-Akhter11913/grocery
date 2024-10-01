@@ -1,0 +1,53 @@
+.popular-products {
+    margin-bottom: 20px;
+}
+
+.popular-products .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-products .categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.popular-products .categories li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 18px;
+    white-space: nowrap; /* Prevents text from breaking */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.popular-products .categories li:hover {
+    color: #3f51b5; /* Add hover effect */
+}
+
+/*  */
+.popular-products {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjust this to control number of columns */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
