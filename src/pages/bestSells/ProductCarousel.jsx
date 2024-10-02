@@ -97,7 +97,7 @@
 
 import React from 'react';
 import BestSells from '../../components/carts/BestSells';
-import { Box } from '@mui/material';
+import { Box, List, ListItem, Typography } from '@mui/material';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import NatureCard from './SideCarts';
@@ -191,29 +191,39 @@ const responsive = {
 
 const ProductCarousel = () => {
   return (
-    <Box sx={{ display: 'flex', marginLeft: 3 }}>
-      {/* AliceCarousel takes 70% of screen width */}
-      <Box sx={{ flexGrow: 1 }}> {/* Remaining space (30%) */}
-        <NatureCard />
+    <Box>
+      <Box component='div' className='header' >
+        <Typography variant='h4' component='h4'>Popular Products</Typography>
+        <List className='categories'>
+          <ListItem>Featured</ListItem>
+          <ListItem>Popular</ListItem>
+          <ListItem>New added</ListItem>
+        </List>
       </Box>
-      <Box sx={{ width: '70vw' }}> {/* 70% of viewport width */}
-        <AliceCarousel
-          mouseTracking
-          items={products.map(product => (
-            <Box key={product.name} sx={{ margin: '0 8px', py: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', mt:2.5 }}> {/* Adds gap between items */}
-              <BestSells product={product} />
-            </Box>
-          ))}
-          responsive={responsive}
-          controlsStrategy="responsive"
-          autoPlay
-          autoPlayInterval={3000}
-          infinite
-        />
+      <Box sx={{ display: 'flex', marginLeft: 3 }}>
+        {/* AliceCarousel takes 70% of screen width */}
+        <Box sx={{ flexGrow: 1 }}> {/* Remaining space (30%) */}
+          <NatureCard />
+        </Box>
+        <Box sx={{ width: '70vw' }}> {/* 70% of viewport width */}
+          <AliceCarousel
+            mouseTracking
+            items={products.map(product => (
+              <Box key={product.name} sx={{ margin: '0 8px', py: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 2.5 }}> {/* Adds gap between items */}
+                <BestSells product={product} />
+              </Box>
+            ))}
+            responsive={responsive}
+            controlsStrategy="responsive"
+            autoPlay
+            autoPlayInterval={3000}
+            infinite
+          />
+        </Box>
+
+        {/* NatureCard with remaining space */}
+
       </Box>
-
-      {/* NatureCard with remaining space */}
-
     </Box>
   );
 };
