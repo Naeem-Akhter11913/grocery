@@ -10,6 +10,10 @@ import './index.css'
 import Footer from './components/footer';
 import Main from './pages/main/Main';
 
+import 'react-alice-carousel/lib/alice-carousel.css';
+
+
+
 function App() {
   return (
     <Router>

@@ -7,6 +7,7 @@ import image_1 from '../hero/hero-1.png'
 import Categories from '../Categories/Categories'
 import { Box } from '@mui/material'
 import PropularPro from '../popularProduts/PropularPro'
+import ProductCarousel from '../bestSells/ProductCarousel'
 
 const Main = () => {
     const title = <h1>Don't miss amazing <br /> grocery deals</h1>;
@@ -21,6 +22,8 @@ const Main = () => {
             <Categories />
 
             <PropularPro />
+
+            <ProductCarousel/>
        
             <Box component='div' style={{ height: '400px' }}>
                 <Slider
