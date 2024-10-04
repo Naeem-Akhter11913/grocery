@@ -14,7 +14,7 @@ const CategoryCart = ({ title, image }) => {
       <Box
         display="flex"
         paddingLeft={6}
-        height="100%"
+        height="100%" 
       >
         <Box
           sx={{

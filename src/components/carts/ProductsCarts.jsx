@@ -4,7 +4,7 @@ import { Box, Button, Rating, Typography } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
-const ProductsCarts = ({ 
+const ProductsCarts = ({
     name,
     about,
     ratings,

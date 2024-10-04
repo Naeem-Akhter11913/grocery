@@ -1,0 +1,26 @@
+.deals-container {
+    position: relative;
+}
+
+.image-container-deal {
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure image respects border-radius */
+}
+
+.image-container-deal img {
+    width: 100%; /* Adjust width to match the container */
+    border-radius: 10px !important; /* Apply the same border-radius as the container */
+    height: 300px;
+}
+
+.content-box-deal {
+    position: relative;
+    background-color: transparent; /* White background similar to your example */
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+    width: 265px;
+    margin-top: -170px !important;
+}

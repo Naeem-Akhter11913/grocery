@@ -8,6 +8,8 @@ import Categories from '../Categories/Categories'
 import { Box } from '@mui/material'
 import PropularPro from '../popularProduts/PropularPro'
 import ProductCarousel from '../bestSells/ProductCarousel'
+// import DealsOfTheDay from '../../components/slider/Deals/DealsOfTheDay'
+import DealsOfTheDay from '../dealsOfTheDaty'
 
 const Main = () => {
     const title = <h1>Don't miss amazing <br /> grocery deals</h1>;
@@ -24,6 +26,8 @@ const Main = () => {
             <PropularPro />
 
             <ProductCarousel/>
+
+            <DealsOfTheDay />
        
             <Box component='div' style={{ height: '400px' }}>
                 <Slider
