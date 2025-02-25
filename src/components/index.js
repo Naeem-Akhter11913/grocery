@@ -16,8 +16,8 @@ export {
   AppHeader,
   AppHeaderDropdown,
   AppSidebar,
-  DocsComponents,
   DocsIcons,
   DocsLink,
   DocsExample,
+  DocsComponents
 }
